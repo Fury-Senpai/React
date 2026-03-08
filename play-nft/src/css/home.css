@@ -1,0 +1,180 @@
+section.home {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 120px;
+    height: 100vh;
+}
+
+section.home .home-left-container {
+    width: 70%;
+    height: max-content;
+}
+
+section.home .home-left-container > .hero-content >   h1 {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+section.home .home-left-container > div >   p {
+    font-size: 1.3rem;
+    width: 70%;
+    margin-top: 30px;
+}
+
+section.home .home-left-container > .hero-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+    width: 80%;
+}
+
+section.home .home-left-container > .hero-buttons button {
+    font-weight: 200;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: ease all 0.2s;
+}
+
+section.home .home-left-container > .hero-buttons button.discover-btn {
+    background-image: linear-gradient(to top, #626e6e 0%, #330867 5%, #30cfd0 100%);
+    border: 2px solid var(--text-100);
+    color: var(--text-100);
+    
+}
+section.home .home-left-container > .hero-buttons button.create-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-300);
+    color: var(--text-100);
+}
+
+section.home .home-left-container > .hero-buttons span.video-btn {
+    padding: 10px; 
+    margin-left: auto;
+}
+section.home .home-left-container > .hero-buttons span.video-btn > i {
+    margin-right: 20px;
+}
+
+section.home .home-left-container > .hero-buttons span.video-btn > a {
+    color: var(--text-100);
+    text-decoration: underline;
+}
+
+section.home .home-left-container > .gradient-border {
+    margin-top: 100px;
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(171deg, #00C9FF, #92FE9D);
+
+}
+section.home .home-left-container > .gradient-border > .audience-info {
+   
+    display: flex;
+    width: 100%;
+    justify-self: flex-start;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+    border-radius: 10px;
+    height: 100%;
+    
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+
+section.home .home-left-container > .gradient-border > .audience-info span h4 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+section.home .home-left-container > .gradient-border > .audience-info span p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/*  */
+/* HOME RIGHT CONTAINER */
+/*  */
+
+section.home .home-right-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+    height: max-content;
+    width: 80%;
+    
+}
+
+section.home .home-right-container .img-container {
+    height: 50%;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 2px;
+    background-color: var(--text-100);
+
+    position: relative;
+}
+
+section.home .home-right-container .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+section.home .home-right-container .img-container > .nft-detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 10px 20px;
+    
+    background: rgba(50, 175, 221, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(221, 224, 234, 0.754);
+
+    font-size: 1.3rem;
+}
+section.home .home-right-container .img-container > .nft-detail > .nft-detail-left ,
+section.home .home-right-container .img-container > .nft-detail > .nft-detail-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.home .home-right-container .img-container > .nft-detail  button {
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: ease all 0.2s;
+}
+
+section.home .home-right-container .img-container > .nft-detail  button:active {
+    scale: 0.97;
+}
+section.home .home-right-container .img-container > .nft-detail  button.nft-bid-btn {
+    background-image: linear-gradient(to top, #626e6e 0%, #330867 5%, #30cfd0 100%);
+    border: 2px solid var(--text-100);
+    color: var(--text-100);
+}
+
+section.home .home-right-container .img-container > .nft-detail  button.nft-purchase-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-300);
+    color: var(--text-100);
+}
