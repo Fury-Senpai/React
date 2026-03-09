@@ -1,0 +1,54 @@
+section.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+section.popular h1 {
+    font-size: 4rem;
+}
+
+section.popular .cards-container { 
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+section.popular .cards-container::-webkit-scrollbar {
+    width: 0;
+}
+section.popular .cards-container .cards-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    
+}
+
+section.popular .cards-container .cards-box .nft-card {
+    
+    flex:  0 0 20em;
+    height: 30em;
+
+    font-size: 1.3rem;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+section.popular .cards-container .cards-box .nft-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes spin {
+    from{translate: 0;}
+    to{translate: -100%;}
+}

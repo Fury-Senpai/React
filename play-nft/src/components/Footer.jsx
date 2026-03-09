@@ -13,10 +13,10 @@ const Footer = () => {
                 </p>
 
                 <div className="footer-social-links">
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                    <span><i class="fa-brands fa-x-twitter"></i></span>
-                    <span><i class="fa-brands fa-facebook"></i></span>
-                    <span><i class="fa-brands fa-discord"></i></span>
+                    <span><i className="fa-brands fa-instagram"></i></span>
+                    <span><i className="fa-brands fa-x-twitter"></i></span>
+                    <span><i className="fa-brands fa-facebook"></i></span>
+                    <span><i className="fa-brands fa-discord"></i></span>
                 </div>
             </div>
 
