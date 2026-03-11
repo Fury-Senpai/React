@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: primary-font;
+    src: url('./assets/fonts/storm_gust/Storm Gust.ttf');
+}
+:root {
+  --color-primary: #CEFF05;
+  --radius: 8px;
+}
