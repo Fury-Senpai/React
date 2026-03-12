@@ -12,7 +12,13 @@
   --primary-black : #0E0E0E;
 
   --secodnary-text : #3B3B3B;
+  --secondary-black : #0b0b0b;
   --glass-black : rgba(0, 0, 0, 0.2);
+
+  --soft-blue : #605EB1;
+  --light-yellow : #E9DF7D;
+  --baby-pink : #DDBEC6;
+  --mint-green : #B3DEA8;
 }
 
 *{
@@ -33,5 +39,5 @@ body {
   background: linear-gradient(#EC5911, #EC5911 , blue);
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0px 2px 3px rgb(14, 14, 14);
+  text-shadow: 0px 2px 3px rgb(11, 11, 11);
 }

@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="flex h-max items-center justify-between bg-transparent absolute w-[90%] left-[50%] transform translate-x-[-50%] top-8">
+        <header className="flex h-max items-center justify-between bg-transparent absolute w-[90%] left-[50%] transform translate-x-[-50%] top-8 z-20">
             {/* right */}
             <div>
                 <h3 className="text-5xl font-[primary-font] text-(--primary-gray)">
