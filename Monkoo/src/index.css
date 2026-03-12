@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'primary-font';
+  src: url(./assets/fonts/Sprintura\ Demo.otf);
+}
+
+:root {
+  --primary-gray : #DCDCDC;
+  --primary-orange : #EC5911;
+  --primary-white : #FFFFFF;
+  --primary-black : #0E0E0E;
+
+  --secodnary-text : #3B3B3B;
+  --glass-black : rgba(0, 0, 0, 0.2);
+}
+
+*{
+  box-sizing: border-box;
+}
+html ,
+ body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: var(--primary-black);
+  color: whitesmoke;
+}
+
+.inner-shadow-text {
+  color: transparent;
+  background: linear-gradient(#EC5911, #EC5911 , blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 2px 3px rgb(14, 14, 14);
+}
