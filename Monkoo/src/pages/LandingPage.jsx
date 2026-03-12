@@ -1,5 +1,5 @@
 import monk from '../assets/images/monk2-hd.png';
-import { FaGithub , FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import CustomButton from '../components/CustomButton';
 
@@ -7,9 +7,9 @@ const LandingPage = () => {
     return (
         <section className="w-full h-screen">
 
-        {/* MONKOO TEXT */}
-        <h1
-            className="
+            {/* MONKOO TEXT */}
+            <h1
+                className="
             absolute top-1/3 left-1/2
             -translate-x-1/2 -translate-y-1/2
             text-[19.8rem]
@@ -25,14 +25,14 @@ const LandingPage = () => {
             max-xl:text-[9rem]
             max-lg:text-[6.5rem]
         "
-        >
-            MONKOO
-        </h1>
+            >
+                MONKOO
+            </h1>
 
 
-        {/* MONKOO LOGO */}
-        <div
-            className="
+            {/* MONKOO LOGO */}
+            <div
+                className="
             w-1/4
             absolute bottom-0 left-1/2
             -translate-x-1/2
@@ -42,14 +42,14 @@ const LandingPage = () => {
             max-xl:bottom-2
             max-lg:w-1/2
         "
-        >
-            <img src={monk} className="w-full h-full object-cover" />
-        </div>
+            >
+                <img src={monk} className="w-full h-full object-cover" />
+            </div>
 
 
-        {/* COLLECT NFT TEXT */}
-        <h2
-            className="
+            {/* COLLECT NFT TEXT */}
+            <h2
+                className="
             absolute
             text-[12rem]
             w-full flex justify-center
@@ -62,14 +62,14 @@ const LandingPage = () => {
             max-2xl:text-9xl
             max-lg:text-8xl
         "
-        >
-            COLLECT NFT
-        </h2>
+            >
+                COLLECT NFT
+            </h2>
 
 
-        {/* NEW TEXT */}
-        <h3
-            className="
+            {/* NEW TEXT */}
+            <h3
+                className="
             absolute
             text-6xl
             bottom-24
@@ -95,14 +95,14 @@ const LandingPage = () => {
             max-lg:rotate-0
             max-lg:left-15
         "
-        >
-            NEW
-        </h3>
+            >
+                NEW
+            </h3>
 
 
-        {/* LEFT SOCIAL BAR */}
-        <div
-            className="
+            {/* LEFT SOCIAL BAR */}
+            <div
+                className="
             rounded-tr-2xl rounded-br-2xl
             bg-(--primary-orange)
             w-max
@@ -112,26 +112,26 @@ const LandingPage = () => {
             absolute top-1/2 left-0
             -translate-y-1/2
         "
-        >
-            <ul className="flex flex-col gap-20">
-            <a href="https://github.com/Fury-Senpai">
-                <FaGithub size={30} color="black" />
-            </a>
+            >
+                <ul className="flex flex-col gap-20">
+                    <a href="https://github.com/Fury-Senpai">
+                        <FaGithub size={30} color="black" />
+                    </a>
 
-            <a href="https://linkedin.com/in/nitish-harbola-a795a2189">
-                <CiLinkedin size={30} color="black" />
-            </a>
+                    <a href="https://linkedin.com/in/nitish-harbola-a795a2189">
+                        <CiLinkedin size={30} color="black" />
+                    </a>
 
-            <a href="https://www.instagram.com/narendramodi">
-                <FaInstagram size={30} color="black" />
-            </a>
-            </ul>
-        </div>
+                    <a href="https://www.instagram.com/narendramodi">
+                        <FaInstagram size={30} color="black" />
+                    </a>
+                </ul>
+            </div>
 
 
-        {/* RIGHT GLASS PANEL */}
-        <div
-            className="
+            {/* RIGHT GLASS PANEL */}
+            <div
+                className="
             w-1/3
             bg-(--glass-black)
             backdrop-blur-xs
@@ -144,17 +144,17 @@ const LandingPage = () => {
             max-xl:w-1/2
             max-lg:w-1/2
         "
-        >
-            <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Ipsa doloremque maxime quis excepturi, reiciendis adipisci
-            quo reprehenderit incidunt officia deserunt.
-            </p>
+            >
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsa doloremque maxime quis excepturi, reiciendis adipisci
+                    quo reprehenderit incidunt officia deserunt.
+                </p>
 
-            <CustomButton text="Get More Info" />
-        </div>
+                <CustomButton text="Get More Info" />
+            </div>
 
-</section>
+        </section>
     )
 }
 
