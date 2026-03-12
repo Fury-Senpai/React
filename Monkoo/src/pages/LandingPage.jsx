@@ -3,6 +3,9 @@ import freakMonk from '../assets/images/freaky-monkey.png'
 import coldMonk from '../assets/images/coldy-monk.png'
 import camoMonk from '../assets/images/camo-monk.png'
 import pirateMonk from '../assets/images/pirate-monk.png'
+import bjpMonk from '../assets/images/bjp-monk.png'
+import hoodMonk from '../assets/images/hood-monk.png'
+import prisonerMonk from '../assets/images/prisoner-monk.png'
 
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -203,6 +206,53 @@ const LandingPage = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate sunt laudantium iure recusandae molestiae.
                     </p>
                 </div>
+            </section>
+
+            <section className='mt-5'>
+            <div className='flex w-full relative'>
+                
+                {/* Left Panel - Black */}
+                <div className='bg-black w-[35%] relative h-[22em] md:h-[28em] lg:h-[35em] xl:h-[50em] 2xl:h-[55em]'>
+                <img 
+                    src={prisonerMonk} 
+                    className='w-[70%] md:w-[75%] lg:w-[80%] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[750px] object-cover object-top absolute bottom-0 right-0'
+                />
+                </div>
+
+                {/* Center Panel - White */}
+                <div className='bg-(--primary-white) w-[30%] h-[22em] md:h-[28em] lg:h-[35em] xl:h-[50em] 2xl:h-[55em]'>
+                <img 
+                    src={hoodMonk} 
+                    className='object-cover object-top w-[40%] md:w-[38%] lg:w-[35%] max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px] absolute bottom-0 left-1/2 transform -translate-x-1/2'
+                />
+                </div>
+
+                {/* Right Panel - Orange */}
+                <div className='bg-(--primary-orange) w-[35%] h-[22em] md:h-[28em] lg:h-[35em] xl:h-[50em] 2xl:h-[55em] relative'>
+                <img 
+                    src={bjpMonk} 
+                    className='w-[70%] md:w-[75%] lg:w-[80%] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[750px] object-cover object-top absolute bottom-0 -left-6 md:-left-8 lg:-left-10'
+                />
+                </div>
+
+                {/* CTA Button */}
+                <div className='absolute bottom-6 md:bottom-8 lg:bottom-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap'>
+                <CustomButton text="Get Free NFT Now" />
+                </div>
+
+            </div>
+
+            {/* Text Section */}
+            <div className='flex flex-col gap-4 md:gap-5 lg:gap-6 p-8 md:p-12 lg:p-15 xl:p-20 2xl:p-24'>
+                <h3 className='text-(--primary-white) text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium'>
+                MONKOO IS A <span className='text-(--primary-orange)'>REVOLUTION</span>
+                </h3>
+                <p className='text-sm md:text-base xl:text-lg 2xl:text-xl leading-relaxed'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quis!<br/>
+                Lorem ipsum dolor sit, amet consectetur adipisicing.<br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.
+                </p>
+            </div>
             </section>
         </div>
     )
