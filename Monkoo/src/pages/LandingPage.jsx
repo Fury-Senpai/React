@@ -6,6 +6,7 @@ import pirateMonk from '../assets/images/pirate-monk.png'
 import bjpMonk from '../assets/images/bjp-monk.png'
 import hoodMonk from '../assets/images/hood-monk.png'
 import prisonerMonk from '../assets/images/prisoner-monk.png'
+import monkGang from '../assets/images/monk-gang.png'
 
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -13,7 +14,7 @@ import CustomButton from '../components/CustomButton';
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className='w-full'>
             <section className="w-full h-screen relative bg-(--secondary-black) z-10">
 
                 {/* MONKOO TEXT */}
@@ -237,7 +238,7 @@ const LandingPage = () => {
 
                 {/* CTA Button */}
                 <div className='absolute bottom-6 md:bottom-8 lg:bottom-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap'>
-                <CustomButton text="Get Free NFT Now" />
+                <CustomButton text="Start Adventure" />
                 </div>
 
             </div>
@@ -253,6 +254,13 @@ const LandingPage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.
                 </p>
             </div>
+            </section>
+
+            <section className='bg-black flex justify-center h-max relative'>
+                <img src={monkGang} />
+                <div className='self-end mb-20 absolute bottom-0 left-1/2 transform -translate-x-1/2'>
+                    <CustomButton text="Get Free NFT Now"/>
+                </div>
             </section>
         </div>
     )
