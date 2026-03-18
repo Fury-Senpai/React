@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: cowbeep-boy;
+  src: url('../src/assets/fonts/Bleeding_Cowboys.ttf');
+}
+
+@font-face {
+  font-family: spiderman-comic;
+  src: url('../src/assets/fonts/The\ Amazing\ Spider-Man.ttf');
+}
+
+:root {
+  --ivory-white : #F9FDF8;
+  --accent-purple : #8B62C2;
+  --transparent-purple : #1713215c;
+   --light-black : #181818;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: #000000;
+  color: #e0e0e0;
+}
+
+body {
+font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+             "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-shadow-purple {
+  text-shadow: 0px 10px 50px #a36fe6;
+}
+
+.button-animation {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-animation::after {
+  content: "";
+  position: absolute;
+  background: #8B62C2;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.button-animation:hover::after {
+  width: 100%;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
